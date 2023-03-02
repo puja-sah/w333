@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet"href="homepage.css">
+</head>
+<body>
+
+<script>
+function myFun() {
+var a = document.myForm.EMAIL.value;
+if(a.indexOf('@')<=0) {
+document.getElementById("Message") .innerHTML=" invalid @ position ";
+return false;
+}
+
+if((a.charAt(a.length-4)!='.') && (a.charAt(a.length-3)!='.'))
+{
+document.getElementById("Message").innerHTML=" invalid. position ";
+return false;
+
+}
+
+}
+</script>
+
+<form method="post" action="home 1.html">
+<form name="myForm" onsubmit="return myFun()" class="form-control">
+
+ 
+<center>
+
+<div class="form-control">
+<h2> SIGNIN FORM <h2>
+<br>
+<label> EMAIL </label>
+<input type="text" name="email" value="" class="form-control"><br><br>
+</div>
+
+<div class="form-control">
+<label> USERNAME </label>
+<input type="text" name="username" value="" class="form-control"><br><br>
+</div>
+
+<div class="form-control">
+<label> password </label>
+<input type="text" name="password" value="" class="form-control"><br><br>
+</div>
+
+<input type="submit" value="submit" href="home 1.html" class="form-control"></input>
+
+<a class="btntwo" href="welcomeA.html"> BACK </a>
+
+</center>
+</form>
+</form>
+
+</body>
+
+</html>
